@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /AwareGroup.Projectworks.Tester/appsettings.development.json
+/generate.ps1
