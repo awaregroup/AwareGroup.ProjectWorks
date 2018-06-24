@@ -1,4 +1,5 @@
-﻿using Refit;
+﻿using Newtonsoft.Json;
+using Refit;
 using System;
 using System.Net.Http;
 using System.Text;
@@ -17,8 +18,17 @@ namespace AwareGroup.ProjectWorks
             apiHttpClient.BaseAddress = new Uri(apiBaseUrl);
             apiHttpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes($"{apiUsername}:{apiPassword}")));
 
+            //set refit client settings
+            var refitSettings = new RefitSettings()
+            {
+                JsonSerializerSettings = new JsonSerializerSettings
+                {
+                    NullValueHandling = NullValueHandling.Ignore
+                }
+            };
+
             //set up api client
-            var api = RestService.For<T>(apiHttpClient);
+            var api = RestService.For<T>(apiHttpClient, refitSettings);
             return api;
         }
     }
