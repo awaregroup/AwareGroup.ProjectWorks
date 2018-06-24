@@ -1,8 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Refit;
 using System;
-using System.Net.Http;
-using System.Text;
 
 namespace AwareGroup.Projectworks.Tester
 {
