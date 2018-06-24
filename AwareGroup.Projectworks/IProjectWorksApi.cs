@@ -1,6 +1,6 @@
 ﻿namespace AwareGroup.ProjectWorks
 {
-    interface IProjectWorksApi
+    public interface IProjectWorksApi
     {
     }
 }
