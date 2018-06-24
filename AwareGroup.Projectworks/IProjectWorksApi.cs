@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AwareGroup.Projectworks
+﻿namespace AwareGroup.ProjectWorks
 {
-    public interface IProjectWorksApi
+    interface IProjectWorksApi
     {
     }
 }

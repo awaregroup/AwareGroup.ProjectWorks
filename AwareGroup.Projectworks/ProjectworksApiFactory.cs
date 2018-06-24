@@ -3,10 +3,13 @@ using System;
 using System.Net.Http;
 using System.Text;
 
-namespace AwareGroup.Projectworks
+namespace AwareGroup.ProjectWorks
 {
-    public static class ProjectworksApiFactory
+    public static class ProjectWorksApiFactory
     {
+        /// <summary>
+        /// Added generics for future compatibility reasons
+        /// </summary>
         public static T GetApiClient<T>(string apiBaseUrl, string apiUsername, string apiPassword) where T : IProjectWorksApi
         {
             //set up HttpClient
