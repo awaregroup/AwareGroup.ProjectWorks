@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AwareGroup.Projectworks\AwareGroup.Projectworks.csproj" />
+    <ProjectReference Include="..\AwareGroup.Projectworks\AwareGroup.ProjectWorks.csproj" />
   </ItemGroup>
 
 </Project>
