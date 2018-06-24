@@ -1,11 +1,12 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
+using System.Threading.Tasks;
 
 namespace AwareGroup.ProjectWorks.Tester
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             #region Set up app config
             IConfiguration config = new ConfigurationBuilder()
@@ -25,9 +26,9 @@ namespace AwareGroup.ProjectWorks.Tester
             var pw = ProjectWorksApiFactory.GetApiClient<IProjectWorksV1Api>(apiBaseUrl, apiUsername, apiPassword);
 
             //test api
-            pw.GetTasks().Result.ForEach(t => Console.WriteLine(t.TaskName));
-            pw.GetUsers().Result.ForEach(u => Console.WriteLine($"{u.FirstName} {u.LastName} - {u.Email}"));
-            pw.GetTimesheets().Result.ForEach(t => Console.WriteLine($"{t.Date.Value.Date} {t.UserID} {t.TaskID} - {t.Minutes}"));
+            (await pw.GetTasks()).ForEach(t => Console.WriteLine(t.TaskName));
+            (await pw.GetUsers()).ForEach(u => Console.WriteLine($"{u.FirstName} {u.LastName} - {u.Email}"));
+            (await pw.GetTimesheets()).ForEach(t => Console.WriteLine($"{t.Date.Date} {t.UserID} {t.TaskID} - {t.Minutes}"));
 
             Console.ReadLine();
         }
