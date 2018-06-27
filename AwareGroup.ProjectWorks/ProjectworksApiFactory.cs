@@ -23,7 +23,8 @@ namespace AwareGroup.ProjectWorks
             {
                 JsonSerializerSettings = new JsonSerializerSettings
                 {
-                    NullValueHandling = NullValueHandling.Ignore
+                    NullValueHandling = NullValueHandling.Ignore,
+                    DefaultValueHandling = DefaultValueHandling.Ignore
                 }
             };
 
