@@ -1,5 +1,5 @@
 # AwareGroup.ProjectWorks
-The [Refit](https://github.com/reactiveui/refit) API definitions and models were automatically generated using a PowerShell script and committed into this repository. The script will continue to be run as further updates are pushed out for the ProjectWorks API services.
+The [Refit](https://github.com/reactiveui/refit) API definitions and models were automatically generated using a PowerShell script and committed into this repository. The script will continue to be run as further updates are pushed out for the [ProjectWorks](https://projectworks.io) API services.
 
 ## Example
 ```csharp
