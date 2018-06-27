@@ -7,6 +7,6 @@ The [Refit](https://github.com/reactiveui/refit) API definitions and models were
 var pw = ProjectWorksApiFactory.GetApiClient<IProjectWorksV1Api>(apiBaseUrl, apiUsername, apiPassword);
 
 //test api
-var tasks = await pw.GetTasks();
+var tasks = await pw.GetTasksAsync();
 tasks.ForEach(t => Console.WriteLine(t.TaskName));
 ```
