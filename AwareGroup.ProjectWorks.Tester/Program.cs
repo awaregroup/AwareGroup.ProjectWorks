@@ -26,8 +26,8 @@ namespace AwareGroup.ProjectWorks.Tester
             var pw = ProjectWorksApiFactory.GetApiClient<IProjectWorksV1Api>(apiBaseUrl, apiUsername, apiPassword);
 
             //test api
-            (await pw.GetTasksAsync()).ForEach(t => Console.WriteLine(t.TaskName));
-            (await pw.GetUsersAsync()).ForEach(u => Console.WriteLine($"{u.FirstName} {u.LastName} - {u.Email}"));
+            (await pw.GetTaskAsync()).ForEach(t => Console.WriteLine(t.TaskName));
+            (await pw.GetUserAsync()).ForEach(u => Console.WriteLine($"{u.FirstName} {u.LastName} - {u.Email}"));
             (await pw.GetTimesheetsAsync()).ForEach(t => Console.WriteLine($"{t.Date.Date} {t.UserID} {t.TaskID} - {t.Minutes}"));
 
             Console.ReadLine();

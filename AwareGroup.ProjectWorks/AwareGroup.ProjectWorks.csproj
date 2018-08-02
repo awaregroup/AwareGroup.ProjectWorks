@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Aware Group</Authors>
+    <Company>Aware Group</Company>
+    <PackageLicenseUrl>https://github.com/awaregroup/AwareGroup.ProjectWorks/blob/master/LICENCE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/awaregroup/AwareGroup.ProjectWorks/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/awaregroup/AwareGroup.ProjectWorks/</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>ProjectWorks</PackageTags>
+    <Description>The Refit API definitions and models for the ProjectWorks API services.</Description>
+    <Copyright>Aware Group 2018</Copyright>
+    <PackageReleaseNotes>- Version 1.0.0.0
+Initial Commit</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
