@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwareGroup.ProjectWorks", "AwareGroup.Projectworks\AwareGroup.ProjectWorks.csproj", "{B489640A-BCE5-46B0-B8F2-6F115BFEAB85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwareGroup.ProjectWorks", "AwareGroup.ProjectWorks\AwareGroup.ProjectWorks.csproj", "{B489640A-BCE5-46B0-B8F2-6F115BFEAB85}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwareGroup.ProjectWorks.Tester", "AwareGroup.Projectworks.Tester\AwareGroup.ProjectWorks.Tester.csproj", "{09DBAC8A-76EA-41F0-A91A-9B4D78AE7583}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwareGroup.ProjectWorks.Tester", "AwareGroup.ProjectWorks.Tester\AwareGroup.ProjectWorks.Tester.csproj", "{09DBAC8A-76EA-41F0-A91A-9B4D78AE7583}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
