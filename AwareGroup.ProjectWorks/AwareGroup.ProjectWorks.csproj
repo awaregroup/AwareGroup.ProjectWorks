@@ -12,9 +12,14 @@
     <PackageTags>ProjectWorks</PackageTags>
     <Description>Refit API definitions and models for the ProjectWorks API services.</Description>
     <Copyright>Aware Group 2018</Copyright>
-    <PackageReleaseNotes>- Version 1.0.0.0
+    <PackageReleaseNotes>- Version 1.0.0.1
+Implemented August 17th API update. Added support for Custom Fields.
+- Version 1.0.0.0
 Initial Commit</PackageReleaseNotes>
     <Product>ProjectWorks REST API Client</Product>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
